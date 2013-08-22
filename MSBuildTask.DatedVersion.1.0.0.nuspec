@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>MSBuildTask.DatedVersion</id>
+        <version>1.0.0.0</version>
+        <title>MSBuildTask.DatedVersion</title>
+        <authors>BinaryConstruct</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Add a Build.proj and Task to replace AssemblyVersion and AssemblyFileVersion with Major.Minor.YearDayOfYear.VersionNumber.
+
+Version number is an optional parameter and will default to HHmm.</description>
+    </metadata>
+    <files>
+        <file src=".build\build.bat" target=".build\build.bat" />
+        <file src=".build\Build.proj" target=".build\Build.proj" />
+        <file src=".build\DateStampVersion.tasks" target=".build\DateStampVersion.tasks" />
+        <file src="tools\init.ps1" target="tools\init.ps1" />
+    </files>
+</package>
