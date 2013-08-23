@@ -49,6 +49,8 @@
 						string result = Regex.Replace(content, findAssmVers, assmVers);
 						result = Regex.Replace(result, findAssmFileVers, assmFileVers);
 						File.WriteAllText(fileName, result);
+
+                        Log.LogMessage("Updated {0} - {1})\" {2})\"", fileName, assmVers, assmFileVers);
 					}
 				]]>
             </Code>

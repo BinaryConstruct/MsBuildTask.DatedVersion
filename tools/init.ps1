@@ -22,7 +22,7 @@ if (!(test-path $deployTarget)) {
     $buildProj = "$deployTarget/.build/Build.proj"
     
     (Get-Content $buildProj) | 
-    Foreach-Object {$_ -replace "Solution.sln", "../$solutionFileName"} | 
+    Foreach-Object {$_ -replace "Solution.sln", "..\$solutionFileName"} | 
     Set-Content $buildProj
     
     #add solution items
